@@ -7,6 +7,9 @@ function Course() {
       <Header />
       <Navbar />
       <div>Course</div>
+      <div>
+        <h1>Hello World</h1>
+      </div>
     </div>
   );
 }

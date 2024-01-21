@@ -1,40 +1,41 @@
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
+import dashboardBackground from "../assets/images/bg3.jpg";
 import {
-  FaTableCellsLarge,
-  FaUserGraduate,
-  FaPeopleGroup,
-} from "react-icons/fa6";
-import { Link } from "react-router-dom";
+  AiOutlineAppstore,
+  AiOutlineDatabase,
+  AiTwotoneBell,
+} from "react-icons/ai";
 
 function Dashboard() {
   return (
     <div>
       <Header />
       <Navbar />
-      <div className="w-full h-full p-5 relative">
-        <div className="w-full h-full grid grid-cols-3 place-items-center mx-auto my-32">
-          <Link
-            className="bg-yellow-500 w-96 h-44 flex justify-center items-center gap-4 text-2xl font-medium cursor-pointer transform transition-transform hover:scale-110"
-            to="/section"
-          >
-            <FaTableCellsLarge />
-            Sections
-          </Link>
-          <Link
-            className="bg-blue-400 w-96 h-44 flex justify-center items-center gap-4 text-2xl font-medium cursor-pointer transform transition-transform hover:scale-110"
-            to="/course"
-          >
-            <FaUserGraduate />
-            Courses
-          </Link>
-          <Link
-            className="bg-green-500 w-96 h-44 flex justify-center items-center gap-4 text-2xl font-medium cursor-pointer transform transition-transform hover:scale-110"
-            to="/students"
-          >
-            <FaPeopleGroup />
-            Students
-          </Link>
+      <div
+        className="w-full min-h-screen bg-cover bg-center flex items-center justify-center flex-col"
+        style={{ backgroundImage: `url(${dashboardBackground})` }}
+      >
+        <div className="flex items-center justify-start w-full px-10">
+          <div className="w-96 h-44 bg-white shadow-lg shadow-gray-500 flex items-center justify-center gap-3 text-2xl font-semibold text-gray-900">
+            <AiTwotoneBell className="text-5xl" />
+            <p>New Message</p>
+          </div>
+        </div>
+        <div className="pt-5 px-10 border-t-2 mt-12 w-full border-gray-500">
+          <p className="text-2xl mb-5 font-semibold text-gray-700">
+            View Course load and Sections:
+          </p>
+          <div className="flex items-center justify-start gap-20">
+            <div className="w-96 h-44 bg-yellow-500 shadow-lg shadow-gray-500 flex items-center justify-center gap-3 text-2xl font-semibold text-gray-900">
+              <AiOutlineAppstore className="text-5xl" />
+              <p>Sections</p>
+            </div>
+            <div className="w-96 h-44 bg-blue-500 shadow-lg shadow-gray-500 flex items-center justify-center gap-3 text-2xl font-semibold text-gray-900">
+              <AiOutlineDatabase className="text-5xl" />
+              <p>Courses</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

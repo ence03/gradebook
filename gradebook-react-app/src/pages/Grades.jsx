@@ -5,7 +5,9 @@ function Grades() {
     <div>
       <Header />
       <Navbar />
-      <h1>Grades</h1>
+      <div>
+        <div></div>
+      </div>
     </div>
   );
 }

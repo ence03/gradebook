@@ -28,11 +28,17 @@ function Dashboard() {
             View Course load and Sections:
           </p>
           <div className="flex items-center justify-start gap-20">
-            <Link className="w-96 h-44 bg-yellow-500 shadow-lg shadow-gray-500 flex items-center justify-center gap-3 text-2xl font-semibold text-gray-900">
+            <Link
+              className="w-96 h-44 bg-yellow-500 shadow-lg shadow-gray-500 flex items-center justify-center gap-3 text-2xl font-semibold text-gray-900"
+              to="/section"
+            >
               <AiOutlineAppstore className="text-5xl" />
               <p>Sections</p>
             </Link>
-            <Link className="w-96 h-44 bg-blue-500 shadow-lg shadow-gray-500 flex items-center justify-center gap-3 text-2xl font-semibold text-gray-900">
+            <Link
+              className="w-96 h-44 bg-blue-500 shadow-lg shadow-gray-500 flex items-center justify-center gap-3 text-2xl font-semibold text-gray-900"
+              to="/course"
+            >
               <AiOutlineDatabase className="text-5xl" />
               <p>Courses</p>
             </Link>

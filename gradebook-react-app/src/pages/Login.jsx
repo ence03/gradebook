@@ -25,12 +25,12 @@ const Login = () => {
         </div>
         <form className="flex flex-col items-center gap-5 w-full">
           <input
-            className="w-[300px] h-10 bg-gray-300 rounded-3xl px-3 placeholder:text-black outline-none"
+            className="w-[300px] h-10 bg-gray-300 rounded-3xl px-3 placeholder:text-gray-700 outline-none"
             type="text"
             placeholder="Username"
           />
           <input
-            className="w-[300px] h-10 bg-gray-300 rounded-3xl px-3 placeholder:text-black mb-2 outline-none"
+            className="w-[300px] h-10 bg-gray-300 rounded-3xl px-3 placeholder:text-gray-700 mb-2 outline-none"
             type="password"
             placeholder="Password"
           />

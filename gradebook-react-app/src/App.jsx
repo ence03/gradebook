@@ -3,6 +3,8 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Grades from "./pages/Grades";
 import Analytics from "./pages/Analytics";
+import Section from "./pages/Section";
+import Course from "./pages/Course";
 
 export default function App() {
   return (
@@ -14,6 +16,8 @@ export default function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/grades" element={<Grades />} />
           <Route path="/analytics" element={<Analytics />} />
+          <Route path="/section" element={<Section />} />
+          <Route path="/course" element={<Course />} />
         </Routes>
       </BrowserRouter>
     </div>
